@@ -24,7 +24,8 @@ public class DebuggingChallenges {
 //        sout();
 //        printString();
 //        trickyDataTypes();
-            brokenPoliceSpeedGun();
+//        brokenPoliceSpeedGun();
+//        milesPerGallon();
     }
     
     public static void sOut(){
@@ -77,5 +78,15 @@ public class DebuggingChallenges {
             System.out.println("Your nicked sunshine and you have lost your license! ");
         }//end of if 
     }//end of method
+    
+    public static void milesPerGallon()
+       double miles, gallons, mpg;
+       miles = 341.00; gallons = 15.50;
+       mpg = miles / gallons; 
+       
+        System.out.print(miles + " mi/");
+        System.out.print(gallons + "gal");
+        System.out.println(" = " + mpg + " mpg");
+    }
     
 }//end of class
