@@ -1,6 +1,5 @@
 package debuggingchallenges;
-import java.text.DecimalFormat;
-
+import debuggingchallenges.DoNotEdit.Initialisers;
 
 /**
  * @author MC03353
@@ -12,25 +11,32 @@ import java.text.DecimalFormat;
  */
 
 public class DebuggingChallenges {
-    public static DecimalFormat df2 = new DecimalFormat("#.##");
+    
+    
     public static void main(String[] args) {
     /**
      * There are lots of methods written in the main. They are commented out until you are 
-     * ready to test them. Uncomment them, fix them and comment them again so you are 
+     * ready to debug and test them. Uncomment them, fix them and comment them again so you are 
      * not running them all each time you want to test.
      * 
      */
         
 //        sout();
+//        nextSOut();
 //        printString();
 //        trickyDataTypes();
 //        brokenPoliceSpeedGun();
-//        milesPerGallon();
+//        milesPerGallon(); //This method starts on line 82
     }
     
     public static void sOut(){
         System.out.println("Well done, first test passed);
     }//end of sOut method
+    
+    public void nextSOut(){
+        System.out.println("Nice work! You realised this method was being referenced "
+                         + "from a static location");
+    }
     
     public static void printString(){
         String s1 = "Display this string in the console";
@@ -46,7 +52,7 @@ public class DebuggingChallenges {
     
     public static void trickyDataTypes(){
         double d1 = 6.9, d2 = 3.2;
-        int answer = Double.valueOf(df2.format((d1 + d2)));
+        int answer = Double.valueOf(Initialisers.df2.format((d1 + d2)));
     
 //      add the two doubles together and store the answer in variable answer. 
 //      hint, check the data types! 
@@ -54,7 +60,7 @@ public class DebuggingChallenges {
         if(answer == 10.1){
             System.out.println("Well done! ");
         } else {
-            System.out.println("Answer should be " + df2.format((d1 + d2)));
+            System.out.println("Answer should be " + Initialisers.df2.format((d1 + d2)));
         }//end of if
     }// end of method
     
@@ -79,7 +85,7 @@ public class DebuggingChallenges {
         }//end of if 
     }//end of method
     
-    public static void milesPerGallon()
+    public static void milePerGallon(){
        double miles, gallons, mpg;
        miles = 341.00; gallons = 15.50;
        mpg = miles / gallons; 
