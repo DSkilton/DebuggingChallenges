@@ -1,14 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package debuggingchallenges.DoNotEdit;
+import java.text.DecimalFormat;
 
-/**
- *
- * @author MC03353
- */
 public class Initialisers {
+    private static DecimalFormat df2 = new DecimalFormat("#.##");
+    
+    public static double df2(double d1, double d2){
+        return Double.valueOf(df2.format(d1 + d2));
+    }
     
 }

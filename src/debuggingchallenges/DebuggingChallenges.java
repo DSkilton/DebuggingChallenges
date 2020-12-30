@@ -1,5 +1,5 @@
 package debuggingchallenges;
-import debuggingchallenges.DoNotEdit.Initialisers;
+import debuggingchallenges.DoNotEdit.*;
 
 /**
  * @author MC03353
@@ -10,8 +10,7 @@ import debuggingchallenges.DoNotEdit.Initialisers;
  * Good luck! 
  */
 
-public class DebuggingChallenges {
-    
+public class DebuggingChallenges {//this is the start of the class
     
     public static void main(String[] args) {
     /**
@@ -27,18 +26,19 @@ public class DebuggingChallenges {
 //        trickyDataTypes();
 //        brokenPoliceSpeedGun();
 //        milesPerGallon(); //This method starts on line 82
+        arrayIssue();
     }
     
-    public static void sOut(){
+    public static void sOut(){//start of method
         System.out.println("Well done, first test passed);
     }//end of sOut method
     
-    public void nextSOut(){
+    public void nextSOut(){//start of method
         System.out.println("Nice work! You realised this method was being referenced "
                          + "from a static location");
-    }
+    }//end of nextSOut method
     
-    public static void printString(){
+    public static void printString(){//start of method
         String s1 = "Display this string in the console";
         
         System.out.println();//put your code here 
@@ -52,7 +52,7 @@ public class DebuggingChallenges {
     
     public static void trickyDataTypes(){
         double d1 = 6.9, d2 = 3.2;
-        int answer = Double.valueOf(Initialisers.df2.format((d1 + d2)));
+        int answer = debuggingchallenges.DoNotEdit.Initialisers.df2(d1, d2);
     
 //      add the two doubles together and store the answer in variable answer. 
 //      hint, check the data types! 
@@ -60,7 +60,7 @@ public class DebuggingChallenges {
         if(answer == 10.1){
             System.out.println("Well done! ");
         } else {
-            System.out.println("Answer should be " + Initialisers.df2.format((d1 + d2)));
+            System.out.println("Answer should be " + df2.format((d1 + d2)));
         }//end of if
     }// end of method
     
@@ -68,10 +68,11 @@ public class DebuggingChallenges {
 //the police speed gun we wrote a few lessons ago, has broken! People are 
 //speeding all over. Its like Need for Speed! It needs fixing ASAP!
 //if the speed is less than or equal to 70, no ticket needs to be issued
-//if the speed is more than 70 but less than 74 issue a warning 
-//if the speed is between 75 and 99 then issue fine, put points on licence 
-//and book in for driving safety awareness
+//if the speed is more than 70 but less than 75 issue a warning 
+//if the speed is more than 75 and less than 99 then issue fine, put points on 
+//licence and book in for driving safety awareness
 //if the speed is 100 or more, arrest driver and confiscate licence 
+
         int speed = 70;// you can change the speed to test the logic 
         
         if(speed <= 71){
@@ -85,7 +86,7 @@ public class DebuggingChallenges {
         }//end of if 
     }//end of method
     
-    public static void milePerGallon(){
+    public static void milePerGallon(){//start of method
        double miles, gallons, mpg;
        miles = 341.00; gallons = 15.50;
        mpg = miles / gallons; 
@@ -93,6 +94,16 @@ public class DebuggingChallenges {
         System.out.print(miles + " mi/");
         System.out.print(gallons + "gal");
         System.out.println(" = " + mpg + " mpg");
-    }
+    }//end of method
+    
+    public static void arrayIssue(){//start of method
+//    This is a bit more tricky. Research the error online and then look at the 
+//    conditional operators use in the for loop
+        int array[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        
+        for(int i = 0; i<=array.length; i++){//start of for loop
+            System.out.println(array[i]);
+        }//end of for loop
+    }//end of methof
     
 }//end of class

@@ -1,7 +1,7 @@
 package debuggingchallenges.methodErrors;
 import java.util.Scanner;
 
-public class MethodChallenges {
+class MethodChallenges {
     Scanner SC = new Scanner(System.in);
     /* These methods are all broken and I need your help to fix them! I have put some 
     comments with the methods so explain what I have tried. I am confident you can
