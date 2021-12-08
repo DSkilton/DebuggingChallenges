@@ -20,13 +20,13 @@ public class DebuggingChallenges {//this is the start of the class
      * 
      */
         
-//        sout();
-//        nextSOut();
+//        sOut();
+        nextSOut();
 //        printString();
 //        trickyDataTypes();
 //        brokenPoliceSpeedGun();
 //        milesPerGallon(); //This method starts on line 82
-        arrayIssue();
+        //arrayIssue();
     }
     
     public static void sOut(){//start of method
@@ -34,8 +34,7 @@ public class DebuggingChallenges {//this is the start of the class
     }//end of sOut method
     
     public void nextSOut(){//start of method
-        System.out.println("Nice work! You realised this method was being referenced "
-                         + "from a static location");
+        System.out.println(Initialisers.getAnswer());
     }//end of nextSOut method
     
     public static void printString(){//start of method
