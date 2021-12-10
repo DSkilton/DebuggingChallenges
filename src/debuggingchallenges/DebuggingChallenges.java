@@ -21,7 +21,7 @@ public class DebuggingChallenges {//this is the start of the class
      */
         
 //        sOut();
-        nextSOut();
+//        nextSOut();
 //        printString();
 //        trickyDataTypes();
 //        brokenPoliceSpeedGun();
@@ -34,7 +34,7 @@ public class DebuggingChallenges {//this is the start of the class
     }//end of sOut method
     
     public void nextSOut(){//start of method
-        System.out.println(Initialisers.getAnswer());
+        System.out.println(Initialisers.getAnswer();
     }//end of nextSOut method
     
     public static void printString(){//start of method
@@ -42,7 +42,7 @@ public class DebuggingChallenges {//this is the start of the class
         
         System.out.println();//put your code here 
         
-        if(s1.contains("Display this string in the console")){
+        if(s1.contains("Display This String In The Console")){
             System.out.println("Well done");
         } else {
             System.out.println("Try again. Check things like spaces and capitals");
@@ -59,7 +59,7 @@ public class DebuggingChallenges {//this is the start of the class
         if(answer == 10.1){
             System.out.println("Well done! ");
         } else {
-            System.out.println("Answer should be " + df2.format((d1 + d2)));
+            System.out.println("Answer should be " + Initialisers.df2(d1, d2));
         }//end of if
     }// end of method
     
