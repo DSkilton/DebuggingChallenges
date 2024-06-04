@@ -20,13 +20,13 @@ public class DebuggingChallenges {//this is the start of the class
      * 
      */
         
-//        sOut();
-//        nextSOut();
-//        printString();
-//        trickyDataTypes();
-//        brokenPoliceSpeedGun();
-//        milesPerGallon(); //This method starts on line 82
-        //arrayIssue();
+        sOut();
+        nextSOut();
+        printString();
+        trickyDataTypes();
+        brokenPoliceSpeedGun();
+        milesPerGallon(); //This method starts on line 86
+        arrayIssue();
     }
     
     public static void sOut(){//start of method
@@ -39,8 +39,6 @@ public class DebuggingChallenges {//this is the start of the class
     
     public static void printString(){//start of method
         String s1 = "Display this string in the console";
-        
-        System.out.println();//put your code here 
         
         if(s1.contains("Display This String In The Console")){
             System.out.println("Well done");
@@ -64,13 +62,13 @@ public class DebuggingChallenges {//this is the start of the class
     }// end of method
     
     public static void brokenPoliceSpeedGun(){
-//the police speed gun we wrote a few lessons ago, has broken! People are 
-//speeding all over. Its like Need for Speed! It needs fixing ASAP!
-//if the speed is less than or equal to 70, no ticket needs to be issued
-//if the speed is more than 70 but less than 75 issue a warning 
-//if the speed is more than 75 and less than 99 then issue fine, put points on 
-//licence and book in for driving safety awareness
-//if the speed is 100 or more, arrest driver and confiscate licence 
+    //the police speed gun we wrote a few lessons ago, has broken! People are
+    //speeding all over. Its like Need for Speed! It needs fixing ASAP!
+    //if the speed is less than or equal to 70, no ticket needs to be issued
+    //if the speed is more than 70 but less than 75 issue a warning
+    //if the speed is more than 75 and less than 99 then issue fine, put points on
+    //licence and book in for driving safety awareness
+    //if the speed is 100 or more, arrest driver and confiscate licence
 
         int speed = 70;// you can change the speed to test the logic 
         
@@ -96,13 +94,12 @@ public class DebuggingChallenges {//this is the start of the class
     }//end of method
     
     public static void arrayIssue(){//start of method
-//    This is a bit more tricky. Research the error online and then look at the 
-//    conditional operators use in the for loop
+    // This is a bit more tricky. Research the error online and then look at the
+    // conditional operators use in the for loop
         int array[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         
         for(int i = 0; i<=array.length; i++){//start of for loop
             System.out.println(array[i]);
         }//end of for loop
-    }//end of methof
-    
+    }//end of method
 }//end of class
